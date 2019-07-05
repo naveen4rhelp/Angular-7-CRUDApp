@@ -19,7 +19,7 @@ export class EmployeeService {
     this.http.post(this.apiUrl, model)
       .subscribe(
         data => {
-          console.log("POST Request is successful ", data);
+          //console.log("POST Request is successful ", data);
           this.GetData();
         },
         error => {
@@ -33,7 +33,7 @@ export class EmployeeService {
     this.http.get(this.apiUrl)
       .subscribe(
         data => {
-          console.log("Get Request is successful ", data);
+          //console.log("Get Request is successful ", data);
           this.list = data as Employee[]
         },
         error => {
