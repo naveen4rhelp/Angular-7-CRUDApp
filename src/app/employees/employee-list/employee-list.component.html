@@ -1,0 +1,21 @@
+<table class="table table-hover table-bordered">
+  <thead>
+  <tr>
+    <th>Full Name</th>
+    <th>Emp Code</th>
+    <th>Position</th>
+    <th>Mobile</th>
+    <th>Action</th>
+  </tr>
+</thead>
+  <tbody>
+  <tr *ngFor="let emp of service.list">
+      <td (click)="edit(emp)">{{emp.FullName}}</td>
+      <td (click)="edit(emp)">{{emp.EmpCode}}</td>
+      <td (click)="edit(emp)">{{emp.Position}}</td>
+      <td (click)="edit(emp)">{{emp.Mobile}}</td>
+      <td><button (click)="delete(emp)" class="btn btn-danger" >Delete</button></td>
+  </tr>
+</tbody>
+
+  </table>
